@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <button id="new-chat-button" class="new-chat-button">+ New Chat</button>
+            <button id="clear-history-button" class="clear-history-button">Clear History</button>
+            <div class="history-section">
+                <h3>Recent History</h3>
+                <ul id="history-list">
+                    </ul>
+            </div>
+        </div>
+        <div class="chat-container">
+            <header>
+                <h1>AI Assistant</h1>
+                <div class="header-right">
+                    <button id="theme-toggle" class="theme-toggle">🌙</button>
+                    <div class="status-indicator"></div>
+                </div>
+            </header>
+            <div class="chatbox" id="chatbox">
+                </div>
+            <div class="user-input">
+                <div class="upload-dropdown-container">
+                    <button id="upload-toggle" class="upload-toggle">📎</button>
+                    <div id="upload-dropdown" class="upload-dropdown">
+                        <label for="image-upload">🖼️ Image</label>
+                        <input type="file" id="image-upload" accept="image/*" hidden>
+                        <label for="file-upload">📄 File</label>
+                        <input type="file" id="file-upload" hidden>
+                    </div>
+                </div>
+                <textarea id="message-input" placeholder="Enter a message..."></textarea>
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
